@@ -31,13 +31,13 @@ const getError= function(msg){
      countriesContainer.insertAdjacentText('beforeend',msg);
      countriesContainer.style.opacity=1;
    };
-const getMsg= function(){
-     const msg =`
-     <marquee width="50%" style="font-size: 2rem;">
-    Sorry this is Only For India, CheckOut "GeoLocation Project" to get your country same like this .Thank You ❤️ 
-     </marquee>`;
-     Container.insertAdjacentHTML('beforebegin',msg);
-}
+// const getMsg= function(){
+//      const msg =`
+//      <marquee width="50%" style="font-size: 2rem;">
+//     Sorry this is Only For India, CheckOut "GeoLocation Project" to get your country same like this .Thank You ❤️ 
+//      </marquee>`;
+//      Container.insertAdjacentHTML('beforebegin',msg);
+// }
 const getCountry=async function(country){
      try{
      const response = await fetch(`https://restcountries.com/v3.1/name/${country}`);
@@ -53,7 +53,7 @@ const getCountry=async function(country){
 
 btn.addEventListener('click',function(){
      getCountry('Bharat');
-     getMsg();
+     // getMsg();
 });
 
 
