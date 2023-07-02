@@ -20,7 +20,7 @@ const renderCountry = function(data){
         <p class="country__row"><span>🏛️</span>${capital}</p>
         <p class="country__row"><span>🗣️</span>${languages[0]}</p>
         <p class="country__row"><span>💰</span>${currencies[0].name}</p>
-        <p class="country__row"><span>⌚️</span>${TimeZone}</p>
+        <p class="country__row"><span>⌚️</span>${TimeZone[0]}</p>
       </div>
      </article>`;
    countriesContainer.insertAdjacentHTML('beforeend',html);
